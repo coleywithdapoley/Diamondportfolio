@@ -42,7 +42,7 @@ function createProject(
     'PR & Crisis': 'from-purple-600 to-purple-800',
     'Social Justice': 'from-blue-600 to-indigo-800',
     'Beauty & Lifestyle': 'from-pink-500 to-rose-600',
-    'Creative Tech': 'from-amber-500 to-orange-600'
+    'Creative Tech': 'from-accent-500 to-accent-600'
   }
 
   return {
@@ -154,7 +154,7 @@ export default function ProjectsShowcase() {
     <section
       id="projects"
       ref={ref}
-      className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-purple-50/20 to-amber-50/20 dark:from-dark-900 dark:via-purple-950/20 dark:to-amber-950/10 relative overflow-hidden"
+      className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-purple-50/20 to-accent-50/20 dark:from-dark-900 dark:via-purple-950/20 dark:to-accent-950/10 relative overflow-hidden"
     >
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
@@ -172,15 +172,15 @@ export default function ProjectsShowcase() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 px-2">
-            <span className="bg-gradient-to-r from-purple-900 via-purple-700 to-amber-600 dark:from-purple-300 dark:via-purple-200 dark:to-amber-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-900 via-purple-700 to-accent-600 dark:from-purple-300 dark:via-purple-200 dark:to-accent-400 bg-clip-text text-transparent">
               Featured Projects
             </span>
           </h2>
           <div className="flex items-center justify-center">
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
-            <div className="w-2 h-2 bg-amber-500 rounded-full mx-2"></div>
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500"></div>
-            <div className="w-2 h-2 bg-amber-500 rounded-full mx-2"></div>
+            <div className="w-2 h-2 bg-accent-500 rounded-full mx-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent-500 via-accent-400 to-accent-500"></div>
+            <div className="w-2 h-2 bg-accent-500 rounded-full mx-2"></div>
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
           </div>
         </motion.div>
@@ -198,7 +198,7 @@ export default function ProjectsShowcase() {
               onClick={() => setSelectedCategory(category)}
               className={`px-4 sm:px-6 py-2.5 sm:py-2 rounded-full font-semibold text-xs sm:text-sm md:text-base transition-all duration-300 touch-manipulation min-h-[44px] active:scale-95 ${
                 selectedCategory === category
-                  ? 'bg-gradient-to-r from-purple-600 to-amber-500 text-white shadow-lg scale-105'
+                  ? 'bg-gradient-to-r from-purple-600 to-accent-500 text-white shadow-lg scale-105'
                   : 'bg-white/80 dark:bg-dark-800/80 text-gray-700 dark:text-gray-300 hover:bg-white dark:hover:bg-dark-700 border border-purple-200 dark:border-purple-900'
               }`}
             >
@@ -278,7 +278,7 @@ export default function ProjectsShowcase() {
                   <ul className="space-y-1.5 sm:space-y-2">
                     {project.highlights.map((highlight, idx) => (
                       <li key={idx} className="flex items-start space-x-2 text-xs sm:text-sm text-gray-700 dark:text-gray-300">
-                        <span className="text-amber-500 dark:text-amber-400 mt-1 flex-shrink-0">•</span>
+                        <span className="text-accent-500 dark:text-accent-400 mt-1 flex-shrink-0">•</span>
                         <span>{highlight}</span>
                       </li>
                     ))}

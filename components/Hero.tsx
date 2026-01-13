@@ -25,10 +25,10 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-amber-600 dark:from-purple-950 dark:via-purple-900 dark:to-amber-700"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-purple-900 via-purple-800 to-accent-600 dark:from-purple-950 dark:via-purple-900 dark:to-accent-700"
     >
       {/* Animated gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/50 via-transparent to-amber-600/30 dark:from-purple-950/50 dark:to-amber-700/30 animate-gradient-shift"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/50 via-transparent to-accent-600/30 dark:from-purple-950/50 dark:to-accent-700/30 animate-gradient-shift"></div>
 
       {/* Subtle pattern overlay for texture */}
       <div className="absolute inset-0 opacity-10 dark:opacity-5">
@@ -54,11 +54,11 @@ export default function Hero() {
               transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
               className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-3 sm:mb-4 md:mb-6 leading-[1.1] sm:leading-tight"
             >
-              <span className="bg-gradient-to-r from-white via-amber-100 to-amber-200 dark:from-white dark:via-amber-50 dark:to-amber-100 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-white via-accent-100 to-accent-200 dark:from-white dark:via-accent-50 dark:to-accent-100 bg-clip-text text-transparent">
                 Diamond
               </span>
               <br />
-              <span className="bg-gradient-to-r from-amber-200 via-amber-300 to-amber-400 dark:from-amber-100 dark:via-amber-200 dark:to-amber-300 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-accent-200 via-accent-300 to-accent-400 dark:from-accent-100 dark:via-accent-200 dark:to-accent-300 bg-clip-text text-transparent">
                 Bazile
               </span>
             </motion.h1>
@@ -68,7 +68,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={mounted ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
               transition={{ duration: 0.8, delay: 0.4, ease: 'easeOut' }}
-              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-6 sm:mb-8 md:mb-12 text-amber-200 dark:text-amber-100 font-light italic tracking-wide px-2 sm:px-0"
+              className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-6 sm:mb-8 md:mb-12 text-accent-200 dark:text-accent-100 font-light italic tracking-wide px-2 sm:px-0"
               style={{ fontFamily: 'var(--font-dancing), Georgia, serif' }}
             >
               "Dropping Gems, Shaping Futures!"
@@ -84,15 +84,15 @@ export default function Hero() {
               <a
                 href="#projects"
                 onClick={(e) => handleSmoothScroll(e, '#projects')}
-                className="group px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 active:from-amber-600 active:to-amber-700 text-white rounded-lg font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform active:scale-95 touch-manipulation min-h-[44px] flex items-center justify-center"
+                className="group px-6 sm:px-8 py-3.5 sm:py-4 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-400 hover:to-accent-500 active:from-accent-600 active:to-accent-700 text-white rounded-lg font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform active:scale-95 touch-manipulation min-h-[44px] flex items-center justify-center"
               >
                 <span className="relative z-10">View Projects</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-amber-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-accent-400 to-accent-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </a>
               <a
                 href="#contact"
                 onClick={(e) => handleSmoothScroll(e, '#contact')}
-                className="group px-6 sm:px-8 py-3.5 sm:py-4 bg-white/10 backdrop-blur-md border-2 border-amber-300/50 hover:border-amber-200 active:border-amber-400 text-amber-100 hover:text-white rounded-lg font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform active:scale-95 touch-manipulation min-h-[44px] flex items-center justify-center"
+                className="group px-6 sm:px-8 py-3.5 sm:py-4 bg-white/10 backdrop-blur-md border-2 border-accent-300/50 hover:border-accent-200 active:border-accent-400 text-accent-100 hover:text-white rounded-lg font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transition-all duration-300 transform active:scale-95 touch-manipulation min-h-[44px] flex items-center justify-center"
               >
                 Contact Me
               </a>
@@ -108,11 +108,11 @@ export default function Hero() {
           >
             <div className="relative w-48 h-48 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mx-auto lg:mx-0">
               {/* Decorative rings */}
-              <div className="absolute inset-0 rounded-full border-4 border-amber-400/30 animate-pulse-slow"></div>
-              <div className="absolute inset-4 rounded-full border-2 border-amber-300/20"></div>
-              
+              <div className="absolute inset-0 rounded-full border-4 border-accent-400/30 animate-pulse-slow"></div>
+              <div className="absolute inset-4 rounded-full border-2 border-accent-300/20"></div>
+
               {/* Dropping Gems Logo */}
-              <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-amber-200/50 dark:border-amber-300/50 bg-white dark:bg-white/10 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 md:p-8">
+              <div className="relative w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-accent-200/50 dark:border-accent-300/50 bg-white dark:bg-white/10 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 md:p-8">
                 <Image
                   src="/images/dia-logo.png"
                   alt="Dropping Gems with Diamond Bazile - Logo"
@@ -125,7 +125,7 @@ export default function Hero() {
               </div>
 
               {/* Floating decorative elements */}
-              <div className="absolute -top-4 -right-4 w-16 h-16 bg-amber-400/20 rounded-full blur-xl animate-float"></div>
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-accent-400/20 rounded-full blur-xl animate-float"></div>
               <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-purple-400/20 rounded-full blur-xl animate-float-delayed"></div>
             </div>
           </motion.div>
@@ -142,12 +142,12 @@ export default function Hero() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-          className="w-6 h-10 border-2 border-amber-200/50 rounded-full flex justify-center"
+          className="w-6 h-10 border-2 border-accent-200/50 rounded-full flex justify-center"
         >
           <motion.div
             animate={{ y: [0, 12, 0] }}
             transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
-            className="w-1.5 h-3 bg-amber-200/50 rounded-full mt-2"
+            className="w-1.5 h-3 bg-accent-200/50 rounded-full mt-2"
           ></motion.div>
         </motion.div>
       </motion.div>

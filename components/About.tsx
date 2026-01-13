@@ -33,7 +33,7 @@ export default function About() {
       icon: FiMail, 
       href: 'mailto:Diamondbazile1@gmail.com', 
       label: 'Email',
-      color: 'hover:text-amber-400'
+      color: 'hover:text-accent-400'
     },
   ]
 
@@ -41,7 +41,7 @@ export default function About() {
     <section
       id="about"
       ref={ref}
-      className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-purple-50/30 to-amber-50/30 dark:from-dark-900 dark:via-purple-950/30 dark:to-amber-950/20 relative overflow-hidden"
+      className="py-20 md:py-32 bg-gradient-to-br from-gray-50 via-purple-50/30 to-accent-50/30 dark:from-dark-900 dark:via-purple-950/30 dark:to-accent-950/20 relative overflow-hidden"
     >
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5 dark:opacity-10">
@@ -52,7 +52,7 @@ export default function About() {
 
       {/* Decorative gradient orbs */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200/20 dark:bg-purple-900/20 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-amber-200/20 dark:bg-amber-900/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent-200/20 dark:bg-accent-900/20 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Title */}
@@ -63,16 +63,16 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 px-2">
-            <span className="bg-gradient-to-r from-purple-900 via-purple-700 to-amber-600 dark:from-purple-300 dark:via-purple-200 dark:to-amber-300 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-purple-900 via-purple-700 to-accent-600 dark:from-purple-300 dark:via-purple-200 dark:to-accent-400 bg-clip-text text-transparent">
               About Me
             </span>
           </h2>
           {/* Decorative underline */}
           <div className="flex items-center justify-center">
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
-            <div className="w-2 h-2 bg-amber-500 rounded-full mx-2"></div>
-            <div className="w-24 h-1 bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500"></div>
-            <div className="w-2 h-2 bg-amber-500 rounded-full mx-2"></div>
+            <div className="w-2 h-2 bg-accent-500 rounded-full mx-2"></div>
+            <div className="w-24 h-1 bg-gradient-to-r from-accent-500 via-accent-400 to-accent-500"></div>
+            <div className="w-2 h-2 bg-accent-500 rounded-full mx-2"></div>
             <div className="w-16 h-1 bg-gradient-to-r from-transparent via-purple-600 to-transparent"></div>
           </div>
         </motion.div>
@@ -88,8 +88,8 @@ export default function About() {
           >
             <div className="relative w-full max-w-sm sm:max-w-md mx-auto">
               {/* Decorative frame */}
-              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-br from-purple-400/20 to-amber-400/20 rounded-2xl blur-xl"></div>
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-amber-200/50 dark:border-amber-300/30 bg-gradient-to-br from-purple-100 to-amber-100 dark:from-purple-900 dark:to-amber-900">
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-br from-purple-400/20 to-accent-400/20 rounded-2xl blur-xl"></div>
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 sm:border-4 border-accent-200/50 dark:border-accent-300/30 bg-gradient-to-br from-purple-100 to-accent-100 dark:from-purple-900 dark:to-accent-900">
                 <div className="aspect-[3/4] relative">
                   <Image
                     src="/images/about-photo.jpg"
@@ -114,7 +114,7 @@ export default function About() {
             <div className="space-y-4 text-base sm:text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
               <p className="font-semibold text-purple-900 dark:text-purple-200">
                 Senior Advertising major from{' '}
-                <span className="text-amber-600 dark:text-amber-400">Detroit, Michigan</span>
+                <span className="text-accent-600 dark:text-accent-400">Detroit, Michigan</span>
               </p>
 
               <p>
@@ -127,7 +127,7 @@ export default function About() {
 
               <p>
                 With a{' '}
-                <span className="font-semibold text-amber-700 dark:text-amber-400">
+                <span className="font-semibold text-accent-700 dark:text-accent-400">
                   sports administration minor
                 </span>
                 , I understand the dynamic intersection of sports, entertainment, and marketing.
@@ -141,7 +141,7 @@ export default function About() {
                 for entertainment industry professionals, helping them stand out in a competitive landscape.
               </p>
 
-              <p className="text-amber-700 dark:text-amber-400 font-medium italic">
+              <p className="text-accent-700 dark:text-accent-400 font-medium italic">
                 My passion lies in elevating the visual presence of emerging creatives, transforming their brand identity into powerful narratives that resonate with audiences.
               </p>
             </div>

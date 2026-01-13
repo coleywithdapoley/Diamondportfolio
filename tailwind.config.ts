@@ -25,28 +25,42 @@ const config: Config = {
           900: '#4C1D95', // Deep jewel purple
           950: '#3b0764',
         },
-        // Secondary: Gold Accent
-        gold: {
-          50: '#fffbeb',
-          100: '#fef3c7', // Soft cream
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#F59E0B', // Gold accent
-          600: '#d97706',
-          700: '#b45309',
-          800: '#92400e',
-          900: '#78350f',
-          950: '#451a03',
+        // Secondary: Teal Accent (complementary to purple)
+        accent: {
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6', // Teal accent - Main accent color
+          600: '#0d9488',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
+          950: '#042f2e',
         },
-        // Accent: Soft Cream
+        // Keep gold for backward compatibility, but map to accent
+        gold: {
+          50: '#f0fdfa',
+          100: '#ccfbf1',
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6', // Teal accent
+          600: '#0d9488',
+          700: '#0f766e',
+          800: '#115e59',
+          900: '#134e4a',
+          950: '#042f2e',
+        },
+        // Accent: Soft Mint (light teal for backgrounds)
         cream: {
-          50: '#fffbeb',
-          100: '#FEF3C7', // Soft cream
-          200: '#fde68a',
-          300: '#fcd34d',
-          400: '#fbbf24',
-          500: '#f59e0b',
+          50: '#f0fdfa',
+          100: '#ccfbf1', // Soft mint
+          200: '#99f6e4',
+          300: '#5eead4',
+          400: '#2dd4bf',
+          500: '#14b8a6',
         },
         // Neutral: Slate Grays
         neutral: {
@@ -239,7 +253,8 @@ const config: Config = {
         'medium': '0 4px 25px rgba(0, 0, 0, 0.1)',
         'large': '0 10px 40px rgba(0, 0, 0, 0.15)',
         'glow-purple': '0 0 20px rgba(76, 29, 149, 0.3)',
-        'glow-gold': '0 0 20px rgba(245, 158, 11, 0.4)',
+        'glow-accent': '0 0 20px rgba(20, 184, 166, 0.4)',
+        'glow-gold': '0 0 20px rgba(20, 184, 166, 0.4)', // Backward compatibility
       },
     },
   },
