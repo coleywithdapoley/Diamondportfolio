@@ -71,7 +71,7 @@ export default function Hero() {
               className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-6 sm:mb-8 md:mb-12 text-accent-200 dark:text-accent-100 font-light italic tracking-wide px-2 sm:px-0"
               style={{ fontFamily: 'var(--font-dancing), Georgia, serif' }}
             >
-              "Dropping Gems, Shaping Futures!"
+              {'"'}Dropping Gems, Shaping Futures!{'"'}
             </motion.p>
 
             {/* CTA Buttons */}

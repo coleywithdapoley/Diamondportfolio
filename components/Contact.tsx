@@ -70,7 +70,7 @@ export default function Contact() {
           </h2>
           <div className="w-24 h-1 bg-primary-600 mx-auto"></div>
           <p className="mt-4 text-sm sm:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4">
-            Have a project in mind or want to collaborate? I'd love to hear from you!
+            Have a project in mind or want to collaborate? I&apos;d love to hear from you!
           </p>
         </motion.div>
 
